@@ -1,0 +1,5 @@
+# architecture:openssl option
+aarch64-linux-musl:linux-aarch64
+mips-linux-musl:linux-mips32
+i686-linux-musl:linux-x86 -m32
+x86_64-linux-musl:linux-x86_64
