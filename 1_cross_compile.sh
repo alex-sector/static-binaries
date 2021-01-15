@@ -7,16 +7,16 @@ podman run  \
     -v ./output/i686-linux-musl:/usr/i686-linux-musl:z \
     -v ./output/mips-linux-musl:/usr/mips-linux-musl:z \
     -v ./output/x86_64-linux-musl:/usr/x86_64-linux-musl:z \
-    -v  ./scripts/:/scripts:z \
-    musl_compiler /scripts/1_install_libraries.sh
+    -v ./scripts/:/scripts:z \
+    musl_compiler /scripts/1_install_libraries.sh | tee install_lib.log
 
 podman run  \
     -v ./output/aarch64-linux-musl:/usr/aarch64-linux-musl:z \
     -v ./output/i686-linux-musl:/usr/i686-linux-musl:z \
     -v ./output/mips-linux-musl:/usr/mips-linux-musl:z \
     -v ./output/x86_64-linux-musl:/usr/x86_64-linux-musl:z \
-    -v  ./scripts/:/scripts:z \
-    musl_compiler /scripts/2_install_binaries.sh
+    -v ./scripts/:/scripts:z \
+    musl_compiler /scripts/2_install_binaries.sh | tee install_binaries.log
 
 
 

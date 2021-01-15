@@ -1,8 +1,8 @@
 #!/bin/sh
 
-OPENSSL_VERSION="1.1.1f"
+OPENSSL_VERSION="1.1.1i"
 ZLIB_VERSION="1.2.11"
-LIBPCAP_VERSION="1.9.1"
+LIBPCAP_VERSION="1.10.0"
 
 mkdir /build 2>/dev/null ; cd /build
 
